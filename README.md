@@ -84,7 +84,7 @@ that tools for deciding service boundaries, regression testing, microservice API
 
 If you use this replication package, please cite the associated paper:
 
-> R. Peixoto, F. F. Correia, T Rosa, N. Ali, J. Fritzsch, C. Pautasso, E. Guerra, J. Bogner, A. Goldman, T. B. Sousa, "An Industry Survey on Refactoring Towards Microservices: From Literature to Practice.
+> R. Peixoto, F. F. Correia, T Rosa, N. Ali, J. Fritzsch, C. Pautasso, E. Guerra, J. Bogner, A. Goldman, T. B. Sousa, "An Industry Survey on Refactoring Towards Microservices: From Literature to Practice, 2026 (to appear)
 
 
 
