@@ -14,25 +14,23 @@ and professionals from this field, focusing on how teams select and apply refact
 
 ## Package Content
 
-* `Migration of Monoliths to Microservices Survey - V3.csv`
-    - Raw results retrieved from Google Forms (66 responses, including the invalid one).
-* `Migration of Monoliths to Microservices Survey - V3 (Responses) - Form Responses 1_2.csv`
-    - Cleaned results after data preparation (65 valid responses). This is the file used by the notebook.
-* `industry_survey.ipynb`
-    - Jupyter Notebook with the analysis of the data collected, including all charts and statistics reported in the paper.
-* `study1.pdf`
+* `survey_instrument.pdf`
     - The complete survey instrument as presented to respondents via Google Forms.
-* `catalogue_of_refactorings.pdf`
-    - Catalogue of refactoring techniques presented to survey respondents as reference material.
-* `pre_submission_checklist.pdf` 
+* `survey_responses_raw.csv`
+    - Raw results retrieved from Google Forms (66 responses, including the invalid one).
+* `survey_responses_cleaned.csv`
+    - Cleaned results after data preparation (65 valid responses). This is the file used by the notebook.
+* `analysis.ipynb`
+    - Jupyter Notebook with the analysis of the data collected, including all charts and statistics reported in the paper.
+* `acm_empirical_standards_checklist.pdf` 
     - Checklist of the ACM Empirical Standards "Questionnaire Surveys."
 
 ## How to Run
 
 The notebook is designed to run on **Google Colab**. To reproduce the analysis:
 
-1. Open `industry_survey.ipynb` in [Google Colab](https://colab.research.google.com/).
-2. Upload the cleaned CSV file (`Migration of Monoliths to Microservices Survey - V3 (Responses) - Form Responses 1_2.csv`) to Colab's `/content/` directory, or mount your Google Drive and adjust the path in the data-loading cell accordingly.
+1. Open `analysis.ipynb` in [Google Colab](https://colab.research.google.com/).
+2. Upload the cleaned CSV file (`survey_responses_cleaned.csv`) to Colab's `/content/` directory, or mount your Google Drive and adjust the path in the data-loading cell accordingly.
 3. Run all cells sequentially.
 
 **Dependencies** (pre-installed in Colab): `pandas`, `matplotlib`, `numpy`, `wordcloud`, `IPython`.
@@ -51,7 +49,7 @@ The CSV columns follow the survey's section numbering (`1.x` through `7.x`):
 | 6.x | Challenges | Migration challenges faced |
 | 7.x | Evaluation | Quality attributes assessed, evaluation environments, evaluation inputs |
 
-The notebook uses the **cleaned CSV** (`Form Responses 1_2.csv`) as its data source.
+The notebook uses the **cleaned CSV** (`survey_responses_cleaned.csv`) as its data source.
 
 ## Data Preparation
 
