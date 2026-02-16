@@ -1,6 +1,7 @@
 # Migration of Monoliths to Microservices
 
-This repository contains the empirical package of a study of how the migration from monoliths to microservices is performed.
+This replication package contains the empirical materials from a survey investigating industry practices in migrating monolithic systems to microservices architectures. It includes the survey instrument, raw and cleaned datasets, and a comprehensive analysis notebook with findings on refactoring processes, tooling adoption, and evaluation approaches.
+
 
 ## Scope of the Study
 
