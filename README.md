@@ -1,18 +1,18 @@
 # Migration of Monoliths to Microservices - Survey replication package
 
-This repository contains the replication package of a study of how the migration from monoliths to microservices is performed.
-## Description
+This repository contains the empirical package of a study of how the migration from monoliths to microservices is performed.
+
+## Scope of the Study
+
 To assess how the process of refactoring to microservices is undertaken, the tools and the
 evaluation methods used currently in the industry, we conducted a survey among software companies
-and professionals from this field, focusing on how teams select and apply refactorings. We obtained a total of 66 responses, of which 65 were valid and used in the analysis (1 invalid response was excluded during data preparation).
+and professionals from this field, focusing on how teams select and apply refactorings. The study was performed through an online survey using *Google Forms* with an estimated time of *30 minutes* to complete. We obtained a total of 66 responses, of which 65 were valid and used in the analysis (1 invalid response was excluded during data preparation). The study addresses three research questions: 
 
-## Research Questions
-* RQ1. What is the refactoring process that professionals follow?
-* RQ2. What tools do professionals use?
+* RQ1. What is the refactoring process that professionals follow? 
+* RQ2. What tools do professionals use? 
 * RQ3. How do professionals evaluate the result of the decomposition?
 
-
-## Content
+## Package Content
 
 * `Migration of Monoliths to Microservices Survey - V3.csv`
     - Raw results retrieved from Google Forms (66 responses, including the invalid one).
@@ -26,9 +26,6 @@ and professionals from this field, focusing on how teams select and apply refact
     - Catalogue of refactoring techniques presented to survey respondents as reference material.
 * `pre_submission_checklist.pdf` 
     - Checklist of the ACM Empirical Standards "Questionnaire Surveys."
-
-## Procedure
-The study was performed through an online survey using *Google Forms* with an estimated time of *30 minutes* to complete.
 
 ## How to Run
 
@@ -65,7 +62,8 @@ The cleaned CSV was produced from the raw Google Forms export through the follow
 3. **Column header standardization**: Column names were cleaned and standardized to follow the `Section.Question` numbering scheme.
 
 
-## Findings
+## Summary Of The Findings
+
 * Practitioners plan the migration mostly to be interspersed with the product evolution
 * They mainly focus on web resources and other practitioners' experiences to guide their migration.
 * Software documentation and development process data are
