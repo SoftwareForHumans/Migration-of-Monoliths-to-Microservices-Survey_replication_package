@@ -4,7 +4,7 @@ This repository contains the replication package of a study of how the migration
 ## Description
 To assess how the process of refactoring to microservices is undertaken, the tools and the
 evaluation methods used currently in the industry, we conducted a survey among software companies
-and professionals from this field, focusing on how teams select and apply refactorings. We obtained a total of 66 responses.
+and professionals from this field, focusing on how teams select and apply refactorings. We obtained a total of 66 responses, of which 65 were valid and used in the analysis (1 invalid response was excluded during data preparation).
 
 ## Research Questions
 * RQ1. What is the refactoring process that professionals follow?
@@ -15,18 +15,54 @@ and professionals from this field, focusing on how teams select and apply refact
 ## Content
 
 * `Migration of Monoliths to Microservices Survey - V3.csv`
-    - Corresponds to the raw results retrieved from Google Forms.
+    - Raw results retrieved from Google Forms (66 responses, including the invalid one).
 * `Migration of Monoliths to Microservices Survey - V3 (Responses) - Form Responses 1_2.csv`
-    - Corresponds to the results after data preparation was performed (mostly manually).
+    - Cleaned results after data preparation (65 valid responses). This is the file used by the notebook.
 * `industry_survey.ipynb`
-    - Corresponds to the Jupyter Notebook with the analysis of the data collected.
+    - Jupyter Notebook with the analysis of the data collected, including all charts and statistics reported in the paper.
 * `study1.pdf`
-    - Corresponds to the survey from the Google Forms created.
+    - The complete survey instrument as presented to respondents via Google Forms.
+* `catalogue_of_refactorings.pdf`
+    - Catalogue of refactoring techniques presented to survey respondents as reference material.
 * `pre_submission_checklist.pdf` 
-    - Corresponds to the checklist of the ACM Empirical Standards "Questionnaire Surveys."
+    - Checklist of the ACM Empirical Standards "Questionnaire Surveys."
 
 ## Procedure
 The study was performed through an online survey using *Google Forms* with an estimated time of *30 minutes* to complete.
+
+## How to Run
+
+The notebook is designed to run on **Google Colab**. To reproduce the analysis:
+
+1. Open `industry_survey.ipynb` in [Google Colab](https://colab.research.google.com/).
+2. Upload the cleaned CSV file (`Migration of Monoliths to Microservices Survey - V3 (Responses) - Form Responses 1_2.csv`) to Colab's `/content/` directory, or mount your Google Drive and adjust the path in the data-loading cell accordingly.
+3. Run all cells sequentially.
+
+**Dependencies** (pre-installed in Colab): `pandas`, `matplotlib`, `numpy`, `wordcloud`, `IPython`.
+
+## Data Dictionary
+
+The CSV columns follow the survey's section numbering (`1.x` through `7.x`):
+
+| Prefix | Survey Section | Description |
+|--------|----------------|-------------|
+| 1.x | Experience and Background | Work areas, title, country, years of experience, number of projects, domain areas, system scale |
+| 2.x | Strategies and Processes | Guidance sources, migration planning, data source likelihood, service boundary criteria |
+| 3.x | Tools | Tool assistance (yes/no), specific tools used, desired tool support, tool characteristics |
+| 4.x | Splitting the Monolith | Likert-scale agreement on the importance of 7 monolith-splitting techniques |
+| 5.x | Decomposing the Database | Likert-scale agreement on the importance of 9 database decomposition techniques |
+| 6.x | Challenges | Migration challenges faced |
+| 7.x | Evaluation | Quality attributes assessed, evaluation environments, evaluation inputs |
+
+The notebook uses the **cleaned CSV** (`Form Responses 1_2.csv`) as its data source.
+
+## Data Preparation
+
+The cleaned CSV was produced from the raw Google Forms export through the following (mostly manual) steps:
+
+1. **Exclusion of invalid response**: 1 out of 66 responses was identified as invalid and removed, resulting in 65 valid responses.
+2. **Translation**: Portuguese-language entries were translated to English (e.g., `Cursos` → `Courses`).
+3. **Column header standardization**: Column names were cleaned and standardized to follow the `Section.Question` numbering scheme.
 
 
 ## Findings
@@ -48,6 +84,12 @@ that tools for deciding service boundaries, regression testing, microservice API
 * Most of the respondents, when asked how they usually evaluate the result of the decomposition, mentioned that they did not do it, it was not worth the effort, or only sometimes, and some specifically said it is based on intuition.
 * Maintainability, Performance and Scalability are the quality attributes most assessed.
 * The assessment is performed in multiple environments, mostly during development and using more functional tests than production input or simulation.
+
+## Citation
+
+If you use this replication package, please cite the associated paper:
+
+> R. Peixoto, F. F. Correia, T Rosa, N. Ali, J. Fritzsch, C. Pautasso, E. Guerra, J. Bogner, A. Goldman, T. B. Sousa, "An Industry Survey on Refactoring Towards Microservices: From Literature to Practice.
 
 
 
