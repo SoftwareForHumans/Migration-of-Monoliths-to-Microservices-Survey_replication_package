@@ -1,12 +1,10 @@
-# Migration of Monoliths to Microservices - Survey replication package
+# Migration of Monoliths to Microservices
 
 This repository contains the empirical package of a study of how the migration from monoliths to microservices is performed.
 
 ## Scope of the Study
 
-To assess how the process of refactoring to microservices is undertaken, the tools and the
-evaluation methods used currently in the industry, we conducted a survey among software companies
-and professionals from this field, focusing on how teams select and apply refactorings. The study was performed through an online survey using *Google Forms* with an estimated time of *30 minutes* to complete. We obtained a total of 66 responses, of which 65 were valid and used in the analysis (1 invalid response was excluded during data preparation). The study addresses three research questions: 
+To assess how the process of refactoring to microservices is undertaken, the tools used, and the evaluation methods employed in industry, we conducted an online survey via *Google Forms* (estimated completion time: *30 minutes*). We received 66 responses, of which 65 were valid and analyzed (1 invalid response was excluded during data preparation). The study addresses three research questions:
 
 * RQ1. What is the refactoring process that professionals follow? 
 * RQ2. What tools do professionals use? 
