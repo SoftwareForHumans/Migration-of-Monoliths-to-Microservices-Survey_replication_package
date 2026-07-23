@@ -20,9 +20,11 @@ To assess how the process of refactoring to microservices is undertaken, the too
 * `survey_responses_cleaned.csv`
     - Cleaned results after data preparation (65 valid responses). This is the file used by the notebook.
 * `analysis.ipynb`
-    - Jupyter Notebook with the descriptive analysis of the data collected, including all charts and statistics reported in the paper.
+    - Jupyter Notebook with the descriptive analysis of the data collected, including all charts and statistics reported in the article.
 * `robustness_analysis.py`
-    - Python script with the robustness analysis: 95% Wilson confidence intervals for the main proportions, exploratory subgroup association analyses (Fisher's exact tests with Benjamini-Hochberg correction), and the sensitivity analysis (excluding Brazil-based respondents and Finance-domain projects). Reproduces the tables in the paper's appendix.
+    - Python script with the robustness analysis: 95% Wilson confidence intervals for the main proportions, exploratory subgroup association analyses (Fisher's exact tests with Benjamini-Hochberg correction), and the sensitivity analysis (excluding Brazil-based respondents and Finance-domain projects). Reproduces the tables in the article's appendix.
+* `literature-review-works.md`
+    - List of the works discussed in the article's literature review (Section 3), reconstructed from the publications cited in that section.
 * `acm_empirical_standards_checklist.pdf` 
     - Checklist of the ACM Empirical Standards "Questionnaire Surveys."
 
@@ -96,7 +98,7 @@ that tools for deciding service boundaries, regression testing, microservice API
 
 ## Citation
 
-If you use this replication package, please cite the associated paper:
+If you use this replication package, please cite the associated article:
 
 > R. Peixoto, F. F. Correia, T Rosa, N. Ali, J. Fritzsch, C. Pautasso, E. Guerra, J. Bogner, A. Goldman, T. B. Sousa, "An Industry Survey on Refactoring Towards Microservices: From Literature to Practice, 2026 (to appear)
 
