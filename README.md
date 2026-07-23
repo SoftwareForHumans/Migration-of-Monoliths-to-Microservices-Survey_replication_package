@@ -22,7 +22,7 @@ To assess how the process of refactoring to microservices is undertaken, the too
 * `analysis.ipynb`
     - Jupyter Notebook with the descriptive analysis of the data collected, including all charts and statistics reported in the paper.
 * `robustness_analysis.py`
-    - Python script with the robustness analysis added in the 2026 revision: 95% Wilson confidence intervals for the main proportions, exploratory subgroup association analyses (Fisher's exact tests with Benjamini-Hochberg correction), and the sensitivity analysis (excluding Brazil-based respondents and Finance-domain projects). Reproduces the tables in the paper's appendix.
+    - Python script with the robustness analysis: 95% Wilson confidence intervals for the main proportions, exploratory subgroup association analyses (Fisher's exact tests with Benjamini-Hochberg correction), and the sensitivity analysis (excluding Brazil-based respondents and Finance-domain projects). Reproduces the tables in the paper's appendix.
 * `acm_empirical_standards_checklist.pdf` 
     - Checklist of the ACM Empirical Standards "Questionnaire Surveys."
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Robustness analysis for the survey data (2026 revision).
+"""Robustness analysis for the survey data.
 
 Complements the descriptive analysis in analysis.ipynb by assessing how much
 confidence the reported findings warrant:
