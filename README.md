@@ -1,6 +1,6 @@
 # Empirical Package for _An Industry Survey on Refactoring Towards Microservices: From Literature to Practice_
 
-This replication package contains the empirical materials from a survey investigating industry practices in migrating monolithic systems to microservices architectures. It includes the survey instrument, raw and cleaned datasets, and a comprehensive analysis notebook with findings on refactoring processes, tooling adoption, and evaluation approaches.
+This replication package contains the empirical materials from a survey investigating industry practices in migrating monolithic systems to microservices architectures. It includes the survey instrument, raw and cleaned datasets, a comprehensive analysis notebook with findings on refactoring processes, tooling adoption, and evaluation approaches, and a robustness-analysis script.
 
 
 ## Scope of the Study
@@ -20,11 +20,15 @@ To assess how the process of refactoring to microservices is undertaken, the too
 * `survey_responses_cleaned.csv`
     - Cleaned results after data preparation (65 valid responses). This is the file used by the notebook.
 * `analysis.ipynb`
-    - Jupyter Notebook with the analysis of the data collected, including all charts and statistics reported in the paper.
+    - Jupyter Notebook with the descriptive analysis of the data collected, including all charts and statistics reported in the paper.
+* `robustness_analysis.py`
+    - Python script with the robustness analysis added in the 2026 revision: 95% Wilson confidence intervals for the main proportions, exploratory subgroup association analyses (Fisher's exact tests with Benjamini-Hochberg correction), and the sensitivity analysis (excluding Brazil-based respondents and Finance-domain projects). Reproduces the tables in the paper's appendix.
 * `acm_empirical_standards_checklist.pdf` 
     - Checklist of the ACM Empirical Standards "Questionnaire Surveys."
 
 ## How to Run
+
+### Descriptive analysis (`analysis.ipynb`)
 
 The notebook is designed to run on **Google Colab**. To reproduce the analysis:
 
@@ -33,6 +37,16 @@ The notebook is designed to run on **Google Colab**. To reproduce the analysis:
 3. Run all cells sequentially.
 
 **Dependencies** (pre-installed in Colab): `pandas`, `matplotlib`, `numpy`, `wordcloud`, `IPython`.
+
+### Robustness analysis (`robustness_analysis.py`)
+
+The script uses only the Python standard library. From the package directory (with `survey_responses_cleaned.csv` present), run:
+
+```
+python3 robustness_analysis.py
+```
+
+It prints the confidence intervals, subgroup association tests, and sensitivity tables to standard output.
 
 ## Data Dictionary
 

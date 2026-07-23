@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Additional statistical analysis for the survey data (2026 revision).
+"""Robustness analysis for the survey data (2026 revision).
 
-Complements analysis.ipynb with:
+Complements the descriptive analysis in analysis.ipynb by assessing how much
+confidence the reported findings warrant:
   1. 95% Wilson confidence intervals for the main reported proportions.
   2. Exploratory subgroup association analyses (Fisher's exact tests with
      Benjamini-Hochberg correction): experience, project size, domain, and
@@ -10,7 +11,7 @@ Complements analysis.ipynb with:
      excluding Brazil-based respondents, and excluding Finance-domain projects.
 
 Pure standard-library implementation (no scipy/pandas required).
-Usage: python3 additional_analysis.py
+Usage: python3 robustness_analysis.py
 """
 
 import csv
